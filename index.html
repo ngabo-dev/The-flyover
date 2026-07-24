@@ -10,12 +10,12 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
 
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- 
     - google font link
@@ -25,6 +25,38 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&family=Oswald:wght@600&display=swap"
     rel="stylesheet">
+   <style>
+     .team-grid {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+       gap: 1.5rem;
+       margin-top: 1.5rem;
+     }
+     .team-card {
+       background: #f8f9fa;
+       border-radius: 8px;
+       padding: 1.5rem;
+       text-align: center;
+       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+     }
+     .team-card img {
+       width: 100%;
+       height: 200px;
+       object-fit: cover;
+       border-radius: 8px;
+       margin-bottom: 1rem;
+     }
+     .team-card h3 {
+       margin: 0 0 0.5rem 0;
+       color: #333;
+       font-size: 1.25rem;
+     }
+     .team-card p {
+       margin: 0;
+       color: #666;
+       font-size: 0.95rem;
+     }
+   </style>
 </head>
 
 <body>
@@ -38,7 +70,7 @@
 
       <div class="logo-swap">
         <a href="#" class="logo-image-link">
-          <img src="./assets/images/flyover-logo-optimized.png" width="412" height="200" alt="The Flyover Bridge Africa" class="logo-image">
+          <img src="assets/images/flyover-logo-optimized.png" width="412" height="200" alt="The Flyover Bridge Africa" class="logo-image">
         </a>
 
         <h1>
@@ -67,6 +99,10 @@
               <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
+          <li>
+            <a href="#our-team" class="navbar-link" data-nav-link><span>Our Team</span><ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon></a>
+          </li>
+          <li>
 
           <li>
             <a href="#about" class="navbar-link" data-nav-link>
@@ -144,7 +180,7 @@
         <div class="container">
 
           <p class="section-subtitle">
-            <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
+            <img src="assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
 
             <span>Welcome to The Flyover Bridge Africa</span>
           </p>
@@ -154,7 +190,7 @@
           </h2>
 
           <p class="hero-text">
-            Across East Africa, children living with disabilities are too often left without schools, therapy, or a place to belong. We build the bridge between where they are and the future they deserve.
+            Across Africa, children living with disabilities and vulnerable families are too often left without access to education, healthcare, or a place to belong. We build the bridge between where they are and the future they deserve.
           </p>
 
           <button class="btn btn-primary" onclick="window.location.href='donate.html';">
@@ -255,23 +291,23 @@
 
             <h2 class="deco-title">About Us</h2>
 
-            <img src="./assets/images/deco-img.png" width="58" height="261" alt="" class="deco-img">
+            <img src="assets/images/deco-img.png" width="58" height="261" alt="" class="deco-img">
 
             <div class="banner-row">
 
               <div class="banner-col">
-                <img src="./assets/images/about-banner-1.jpg" width="315" height="380" loading="lazy" alt="Children in classroom"
+                <img src="assets/images/about-banner-1.jpg" width="315" height="380" loading="lazy" alt="Children in classroom"
                   class="about-img w-100">
 
-                <img src="./assets/images/about-banner-2.jpg" width="386" height="250" loading="lazy" alt="Children playing"
+                <img src="assets/images/about-banner-2.jpg" width="386" height="250" loading="lazy" alt="Children playing"
                   class="about-img about-img-2 w-100">
               </div>
 
               <div class="banner-col">
-                <img src="./assets/images/about-banner-3.jpg" width="250" height="277" loading="lazy" alt="Child smiling"
+                <img src="assets/images/about-banner-3.jpg" width="250" height="277" loading="lazy" alt="Child smiling"
                   class="about-img about-img-3 w-100">
 
-                <img src="./assets/images/about-banner-4.jpg" width="315" height="380" loading="lazy" alt="Children studying"
+                <img src="assets/images/about-banner-4.jpg" width="315" height="380" loading="lazy" alt="Children studying"
                   class="about-img w-100">
               </div>
 
@@ -282,7 +318,7 @@
           <div class="about-content">
 
             <p class="section-subtitle">
-              <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+              <img src="assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
 
               <span>Why Choose Us</span>
             </p>
@@ -304,13 +340,20 @@
               <li>
                 <button class="tab-btn">Next Plan</button>
               </li>
+            <li>
+              <button class="tab-btn">Our Team</button>
+            </li>
 
             </ul>
 
             <div class="tab-content">
 
               <p class="section-text">
-                We believe every child deserves to belong, learn, and grow, regardless of ability. Our mission is to break down the barriers that keep children with disabilities in East Africa out of school, out of clinics, and out of community life.
+                To empower children with disabilities and vulnerable communities through quality education, healthcare, and medical insurance, creating opportunities for a better future.
+              </p>
+
+              <p class="section-text" style="margin-top: 1rem;">
+                The Flyover Bridge Africa Foundation (FBA) is a non-profit organization dedicated to transforming the lives of children with disabilities and vulnerable families across Africa. The foundation serves as a bridge that connects disadvantaged children to quality education, healthcare, medical insurance, leadership development, and life-changing opportunities. Through compassion, partnership, and community empowerment, The Flyover Bridge Africa Foundation works to ensure that every child, regardless of disability or background, has the chance to grow, learn, and become a responsible leader who contributes to the development of Africa. Together, we are building a bridge from vulnerability to hope, dignity, and a brighter future.
               </p>
 
               <ul class="tab-list">
@@ -373,7 +416,8 @@
         <div class="container">
 
           <div class="cta-content">
-            <h2 class="h2 section-title">500+ Children With Disabilities Supported</h2>
+            <h2 class="h2 section-title">25 Children Supported So Far</h2>
+            <p class="section-text">The Flyover Bridge Africa Foundation started in Rwanda and is planning to expand across Africa and beyond the world.</p>
 
             <button class="btn btn-outline" onclick="window.location.href='contact.html';">
               <span>Become a Partner</span>
@@ -383,7 +427,7 @@
           </div>
 
           <figure class="cta-banner">
-            <img src="./assets/images/cta-banner.jpg" width="520" height="228" loading="lazy" alt="Children in community"
+            <img src="assets/images/cta-banner.jpg" width="520" height="228" loading="lazy" alt="Children in community"
               class="img-cover">
           </figure>
 
@@ -398,11 +442,11 @@
         - #SERVICE
       -->
 
-      <section class="section service" id="service" style="background-image: url('./assets/images/service-map.png')">
+      <section class="section service" id="service" style="background-image: url('assets/images/service-map.png')">
         <div class="container">
 
           <p class="section-subtitle">
-            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+            <img src="assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
 
             <span>What We Do</span>
           </p>
@@ -523,7 +567,7 @@
               <div class="donate-card">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/donate-1.jpg" width="520" height="325" loading="lazy" alt="Children in classroom"
+                  <img src="assets/images/donate-1.jpg" width="520" height="325" loading="lazy" alt="Children in classroom"
                     class="img-cover">
                 </figure>
 
@@ -581,7 +625,7 @@
               <div class="donate-card">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/donate-2.jpg" width="520" height="325" loading="lazy" alt="Children receiving healthcare"
+                  <img src="assets/images/donate-2.jpg" width="520" height="325" loading="lazy" alt="Children receiving healthcare"
                     class="img-cover">
                 </figure>
 
@@ -639,7 +683,7 @@
               <div class="donate-card">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/donate-3.jpg" width="520" height="325" loading="lazy" alt="Children eating"
+                  <img src="assets/images/donate-3.jpg" width="520" height="325" loading="lazy" alt="Children eating"
                     class="img-cover">
                 </figure>
 
@@ -697,7 +741,7 @@
               <div class="donate-card">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/donate-4.jpg" width="520" height="325" loading="lazy" alt="Children with books"
+                  <img src="assets/images/donate-4.jpg" width="520" height="325" loading="lazy" alt="Children with books"
                     class="img-cover">
                 </figure>
 
@@ -756,6 +800,97 @@
         </div>
       </section>
 
+      <!-- 
+        - #OUR TEAM
+      -->
+
+      <section class="section team" id="our-team">
+        <div class="container">
+
+          <p class="section-subtitle">
+            <img src="assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+
+            <span>Our Team</span>
+
+            <img src="assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+          </p>
+
+          <h2 class="h2 section-title">Meet the people behind our mission</h2>
+
+          <p class="section-text">
+            Our dedicated team includes leaders, advocates, and specialists working every day to support children with disabilities across Africa.
+          </p>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <img src="assets/images/Igisubizo Fils.jpeg" width="360" height="200" loading="lazy" alt="Igisubizo Fils">
+              <h3>Igisubizo Fils</h3>
+              <p>CEO</p>
+            </article>
+
+            <article class="team-card">
+              <img src="assets/images/Imani Beni Marc.jpeg" width="360" height="200" loading="lazy" alt="Imani Beni Marc">
+              <h3>Imani Beni Marc</h3>
+              <p>Vice President</p>
+            </article>
+
+            <article class="team-card">
+              <img src="assets/images/Umutoni Rachel.jpeg" width="360" height="200" loading="lazy" alt="Umutoni Rachel">
+              <h3>Umutoni Rachel</h3>
+              <p>Secretary</p>
+            </article>
+
+            <article class="team-card">
+              <img src="assets/images/Ishimwe jackson.jpeg" width="360" height="200" loading="lazy" alt="Ishimwe jackson">
+              <h3>Ishimwe</h3>
+              <p>Project Manager</p>
+            </article>
+
+            <article class="team-card">
+              <img src="assets/images/Iribagiza alliance.jpeg" width="360" height="200" loading="lazy" alt="Iribagiza alliance">
+              <h3>Iribagiza Alliance</h3>
+              <p>Adviser</p>
+            </article>
+
+            <article class="team-card">
+              <img src="assets/images/Remezo Olaf.jpeg" width="360" height="200" loading="lazy" alt="Remezo Olaf">
+              <h3>Remezo Olaf</h3>
+              <p>Social Media Manager</p>
+            </article>
+
+            <article class="team-card">
+              <img src="assets/images/child and family support.jpeg" width="360" height="200" loading="lazy" alt="Shimwe Gideon">
+              <h3>Shimwe Gideon</h3>
+              <p>Child &amp; Family Support Officer</p>
+            </article>
+
+            <article class="team-card">
+              <img src="assets/images/Ange.jpeg" width="360" height="200" loading="lazy" alt="Iradukunda Marie ange">
+              <h3>Iradukunda Marie Ange</h3>
+              <p>Advisor</p>
+            </article>
+
+            <article class="team-card">
+              <img src="assets/images/Ntawari Kevin.jpeg" width="360" height="200" loading="lazy" alt="Ntawari Kevin">
+              <h3>Ntawari Kevin</h3>
+              <p>Monitoring &amp; Evaluation Officer</p>
+            </article>
+
+            <article class="team-card">
+              <img src="assets/images/Uwimpaye destiny.jpeg" width="360" height="200" loading="lazy" alt="Uwimpaye destiny">
+              <h3>Uwimpaye destiny</h3>
+              <p>Accountant</p>
+            </article>
+
+            <article class="team-card">
+              <img src="assets/images/child and family support.jpeg" width="360" height="200" loading="lazy" alt="DUFITIMANA JOYEUX">
+              <h3>DUFITIMANA JOYEUX</h3>
+              <p>Child &amp; Family Support Officer</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
 
 
 
@@ -769,7 +904,7 @@
         <div class="testi-content">
 
           <p class="section-subtitle">
-            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+            <img src="assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
 
             <span>Our Testimonials</span>
           </p>
@@ -798,7 +933,7 @@
         </div>
 
         <figure class="testi-banner">
-          <img src="./assets/images/testi-banner.jpg" width="960" height="846" loading="lazy" alt="Children smiling together"
+          <img src="assets/images/testi-banner.jpg" width="960" height="846" loading="lazy" alt="Children smiling together"
             class="img-cover">
         </figure>
 
@@ -818,10 +953,10 @@
            <h2 class="h2 section-title">Our Partners</h2>
 
            <div class="partner-logo">
-             <img src="./assets/images/leukode-labs-logo.png" width="157" height="55" loading="lazy" alt="Leukode Labs"
+             <img src="assets/images/leukode-labs-logo.png" width="157" height="55" loading="lazy" alt="Leukode Labs"
                class="gray">
 
-             <img src="./assets/images/leukode-labs-logo.png" width="157" height="55" loading="lazy" alt="Leukode Labs"
+             <img src="assets/images/leukode-labs-logo.png" width="157" height="55" loading="lazy" alt="Leukode Labs"
                class="color">
            </div>
 
@@ -840,11 +975,11 @@
         <div class="container">
 
           <p class="section-subtitle">
-            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+            <img src="assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
 
             <span>Event & Program</span>
 
-            <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+            <img src="assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
           </p>
 
           <h2 class="h2 section-title">
@@ -951,7 +1086,7 @@
 
           </ul>
 
-          <a href="index.html#about" class="btn btn-secondary">
+          <a href="#our-team" class="btn btn-secondary">
             <span>Learn More About Us</span>
 
             <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
@@ -981,16 +1116,16 @@
 
     <div class="footer-gallery">
       <ul class="footer-gallery-track">
-        <li><img src="./assets/images/insta-1.jpg" alt="Children in class" class="img-cover"></li>
-        <li><img src="./assets/images/insta-2.jpg" alt="Children playing" class="img-cover"></li>
-        <li><img src="./assets/images/insta-3.jpg" alt="Children smiling" class="img-cover"></li>
-        <li><img src="./assets/images/insta-4.jpg" alt="Children studying" class="img-cover"></li>
-        <li><img src="./assets/images/insta-5.jpg" alt="Children with teachers" class="img-cover"></li>
-        <li aria-hidden="true"><img src="./assets/images/insta-1.jpg" alt="" class="img-cover"></li>
-        <li aria-hidden="true"><img src="./assets/images/insta-2.jpg" alt="" class="img-cover"></li>
-        <li aria-hidden="true"><img src="./assets/images/insta-3.jpg" alt="" class="img-cover"></li>
-        <li aria-hidden="true"><img src="./assets/images/insta-4.jpg" alt="" class="img-cover"></li>
-        <li aria-hidden="true"><img src="./assets/images/insta-5.jpg" alt="" class="img-cover"></li>
+        <li><img src="assets/images/insta-1.jpg" alt="Children in class" class="img-cover"></li>
+        <li><img src="assets/images/insta-2.jpg" alt="Children playing" class="img-cover"></li>
+        <li><img src="assets/images/insta-3.jpg" alt="Children smiling" class="img-cover"></li>
+        <li><img src="assets/images/insta-4.jpg" alt="Children studying" class="img-cover"></li>
+        <li><img src="assets/images/insta-5.jpg" alt="Children with teachers" class="img-cover"></li>
+        <li aria-hidden="true"><img src="assets/images/insta-1.jpg" alt="" class="img-cover"></li>
+        <li aria-hidden="true"><img src="assets/images/insta-2.jpg" alt="" class="img-cover"></li>
+        <li aria-hidden="true"><img src="assets/images/insta-3.jpg" alt="" class="img-cover"></li>
+        <li aria-hidden="true"><img src="assets/images/insta-4.jpg" alt="" class="img-cover"></li>
+        <li aria-hidden="true"><img src="assets/images/insta-5.jpg" alt="" class="img-cover"></li>
       </ul>
     </div>
 
@@ -998,8 +1133,8 @@
       <div class="container footer-grid">
 
         <div class="footer-brand">
-          <img src="./assets/images/flyover-logo-optimized.png" width="180" height="87" alt="The Flyover Bridge Africa" class="footer-logo">
-          <p class="footer-tagline">Building bridges to inclusion and hope for children with disabilities across East Africa.</p>
+          <img src="assets/images/flyover-logo-optimized.png" width="180" height="87" alt="The Flyover Bridge Africa" class="footer-logo">
+          <p class="footer-tagline">Building bridges to inclusion and hope for children with disabilities across Africa.</p>
           <div class="footer-social">
             <a href="http://www.linkedin.com/in/flyover-bridge-africa-88a22641a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <ion-icon name="logo-linkedin"></ion-icon>
@@ -1010,13 +1145,19 @@
             <a href="https://www.instagram.com/fba4kids" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
           </div>
         </div>
 
         <div class="footer-col">
           <h3 class="footer-heading">Quick Links</h3>
           <ul>
-            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#our-team" class="footer-link">About Us</a></li>
             <li><a href="#service" class="footer-link">Our Services</a></li>
             <li><a href="#donate" class="footer-link">Donate</a></li>
             <li><a href="#event" class="footer-link">Events</a></li>
@@ -1039,10 +1180,19 @@
               <ion-icon name="mail-outline"></ion-icon>
               <span>theflyoverbridgeafrica1@gmail.com</span>
             </a>
+            <a href="tel:+250787007387">
+              <ion-icon name="call-outline"></ion-icon>
+              <span>+250 787 007 387</span>
+            </a>
             <a href="tel:+250784620925">
               <ion-icon name="call-outline"></ion-icon>
-              <span>0784 620 925</span>
+              <span>+250 784 620 925</span>
             </a>
+            <a href="tel:+250784489570">
+              <ion-icon name="call-outline"></ion-icon>
+              <span>+250 784 489 570</span>
+            </a>
+            <span style="display:block; margin-top:0.5rem; color:var(--white_2);">Based in Kirehe District, Rwanda</span>
           </div>
         </div>
 
@@ -1062,13 +1212,13 @@
   <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 
   <!-- 
     - ionicon link
   -->
-  <script type="module" src="./assets/js/ionicons/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="./assets/js/ionicons/ionicons/ionicons.js"></script>
+  <script type="module" src="assets/js/ionicons/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="assets/js/ionicons/ionicons/ionicons.js"></script>
 
 </body>
 
